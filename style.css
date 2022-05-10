@@ -103,7 +103,7 @@ h1 {
 
 .info-plan {
     font-size: .87rem;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 strong {
@@ -115,13 +115,11 @@ strong {
     font-size: .86rem;
 }
 
-.link {
+a {
     font-size: .78rem;
     font-weight: 700;
-}
-
-.link a {
     color: var(--bright-blue);
+    text-underline-offset: 2px;
 }
 
 /* Buttons */
@@ -165,7 +163,7 @@ button {
     color: var(--dark-blue);
 }
 
-.link a:hover {
+a:hover {
     color: hsl(235, 55%, 60%)
 }
 
@@ -206,11 +204,12 @@ button {
     }
 
     .info-price {
-        font-size: .74rem;
+        font-size: .76rem;
     }
 
-    .link {
+    a {
         font-size: .7rem;
+        text-underline-offset: 1px;
     }
 
     button {
