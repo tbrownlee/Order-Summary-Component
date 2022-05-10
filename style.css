@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--pale-blue);
+}
+
+
+main {
+    width: 88%;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0px 25px 30px 0px rgba(56, 41, 224, 0.13);
+}
+
+.hero {
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    display: block;
+    margin-bottom: 28px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 23px;
+}
+
+/* Text area */
+.text {
+    padding: 0 19px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.text p {
+    font-size: .93rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: var(--desaturated-blue);
+}
+
+/* Plan-type section */
+.plan-type {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    padding: 15px 15px;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.plan-type img {
+    width: 3rem;
+    margin-right: 20px;
+    display: block;
+}
+
+.icon-and-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.info-plan,
+.info-price {
+    font-weight: 600;
+}
+
+.info-plan {
+    font-size: .87rem;
+    margin-bottom: 2px;
+}
+
+strong {
+    color: var(--dark-blue);
+}
+
+.info-price {
+    color: var(--desaturated-blue);
+    font-size: .86rem;
+}
+
+.link {
+    font-size: .78rem;
+    font-weight: 700;
+}
+
+.link a {
+    color: var(--bright-blue);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: .92rem;
+    font-family: inherit;
+    border-radius: 11px;
+    border: none;
+    background: none;
+}
+
+/* Note: I used an online converter to convert hsl to rbg for box-shadow */
+.first-button {
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 18px 20px 0px rgba(56, 41, 224, 0.23);
+    margin-bottom: 8px;
+}
+
+.second-button {
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+/* Interactive area */
+.first-button:hover,
+.second-button span:hover {
+    cursor: pointer;
+}
+
+/* Note: I played around with hsl until I got the color I wanted */
+.first-button:hover {
+    background-color: hsl(235, 55%, 60%);
+}
+
+.second-button:hover {
+    color: var(--dark-blue);
+}
+
+.link a:hover {
+    color: hsl(235, 55%, 60%)
+}
+
+@media only screen and (min-width: 400px) {
+    main {
+        width: 350px;
+    }
+
+    .hero {
+        margin-bottom: 30px;
+    }
+
+    .form {
+        padding: 0 40px;
+    }
+
+    .text {
+        padding: 0 7px;
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        margin-bottom: 12px;
+    }
+
+    .text p {
+        font-size: .81rem;
+        line-height: 1.3rem;
+    }
+
+    .plan-type img {
+        width: 2.4rem;
+        margin-right: 16px;
+    }
+
+    .info-plan {
+        font-size: .8rem;
+    }
+
+    .info-price {
+        font-size: .74rem;
+    }
+
+    .link {
+        font-size: .7rem;
+    }
+
+    button {
+        font-size: .72rem;
+        padding: 12px 0;
+    }
+
+    .first-button {
+        margin-bottom: 12px;
+        box-shadow: 0px 8px 18px 5px rgba(56, 41, 224, 0.17);
+    }
+
+    .second-button {
+        margin-bottom: 23px;
+    }
+}
