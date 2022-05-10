@@ -93,17 +93,16 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    text-align: left;
 }
 
 .info-plan,
 .info-price {
+    font-size: .86rem;
     font-weight: 600;
 }
 
 .info-plan {
-    font-size: .87rem;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 strong {
@@ -112,7 +111,6 @@ strong {
 
 .info-price {
     color: var(--desaturated-blue);
-    font-size: .86rem;
 }
 
 a {
@@ -199,12 +197,9 @@ a:hover {
         margin-right: 16px;
     }
 
-    .info-plan {
-        font-size: .8rem;
-    }
-
+    .info-plan,
     .info-price {
-        font-size: .76rem;
+        font-size: .8rem;
     }
 
     a {
