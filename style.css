@@ -113,11 +113,10 @@ strong {
     color: var(--desaturated-blue);
 }
 
-a {
+.link {
     font-size: .78rem;
     font-weight: 700;
     color: var(--bright-blue);
-    text-underline-offset: 2px;
 }
 
 /* Buttons */
@@ -161,7 +160,7 @@ button {
     color: var(--dark-blue);
 }
 
-a:hover {
+.link:hover {
     color: hsl(235, 55%, 60%)
 }
 
@@ -202,7 +201,7 @@ a:hover {
         font-size: .8rem;
     }
 
-    a {
+    .link {
         font-size: .7rem;
         text-underline-offset: 1px;
     }
