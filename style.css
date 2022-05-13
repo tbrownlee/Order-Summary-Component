@@ -113,14 +113,14 @@ strong {
     color: var(--desaturated-blue);
 }
 
-.link {
+.change-link {
     font-size: .78rem;
     font-weight: 700;
     color: var(--bright-blue);
 }
 
 /* Buttons */
-button {
+.first-button, .second-button {
     width: 100%;
     padding: 14px 0;
     font-size: .92rem;
@@ -160,7 +160,7 @@ button {
     color: var(--dark-blue);
 }
 
-.link:hover {
+.change-link:hover {
     color: hsl(235, 55%, 60%)
 }
 
@@ -201,12 +201,12 @@ button {
         font-size: .8rem;
     }
 
-    .link {
+    .change-link {
         font-size: .7rem;
         text-underline-offset: 1px;
     }
 
-    button {
+    .first-button, .second-button {
         font-size: .72rem;
         padding: 12px 0;
     }
