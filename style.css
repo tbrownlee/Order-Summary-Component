@@ -24,12 +24,6 @@ body {
     background-color: var(--pale-blue);
 }
 
-body::before {
-    content: url(./images/pattern-background-mobile.svg);
-    position: absolute;
-    z-index: -1;
-}
-
 main {
     width: 88%;
     background-color: white;
@@ -172,11 +166,6 @@ strong {
 }
 
 @media only screen and (min-width: 400px) {
-    body::before {
-        content: url(./images/pattern-background-desktop.svg);
-        position: absolute;
-        top: 0;
-    }
 
     main {
         width: 350px;
