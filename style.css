@@ -21,10 +21,14 @@ body {
     justify-content: center;
     min-height: 100vh;
     font-family: "Red Hat Display", sans-serif;
+
     background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat; 
 }
 
 main {
+    margin-top: 70px;
     width: 88%;
     background-color: white;
     border-radius: 18px;
@@ -167,7 +171,15 @@ strong {
 
 @media only screen and (min-width: 400px) {
 
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        background-position: 0% -65%; 
+    }
+
     main {
+        margin-top: 0;
         width: 350px;
     }
 
